@@ -12,21 +12,37 @@
     </header>
     <nav>
         <ul>
-            <!--<li><a href="#">Comentarios</a></li>
-            <li><a href="#">+</a></li>
-            <li><a href="#">+</a></li>-->
+            <li><a href="#" id="comments-tab">Gerir Comentários</a></li>
+            <!--<li><a href="#" id="images-tab">Gerir Fotografias</a></li>-->
         </ul>
     </nav>
     <main>
-        <section class="comments">
+        <!-- Seção de Comentários -->
+        <section class="comments section active" id="comments-section">
             <h2>Comentários</h2>
-            <p>Lista de comentários feitos pelos clientes para <strong>-Aceitar</strong> ou <strong>-Não Aceitar</strong></p>
+            <p>Lista de comentários feitos pelos clientes para <strong>Aceitar</strong> ou <strong>Não Aceitar</strong></p>
             <!-- Comentários serão adicionados aqui pelo script.js -->
         </section>
-        <section class="accepted-comments">
+
+        <!-- Seção de Comentários Aceitos -->
+        <section class="accepted-comments section" id="accepted-comments-section">
             <h2>Comentários Aceites</h2>
             <p>Lista de comentários aceites:</p>
             <!-- Comentários aceites serão adicionados aqui pelo script.js -->
+        </section>
+
+        <!-- Seção de Fotografias -->
+        <section class="images section" id="images-section">
+            <h2>Fotografias</h2>
+            <p>Gerencie as imagens do site abaixo:</p>
+            <div id="image-list">
+                <!-- Fotografias serão adicionadas aqui pelo script.js -->
+            </div>
+            <h3>Adicionar Nova Imagem</h3>
+            <form id="upload-form">
+                <input type="file" id="image-upload" accept="image/*" required>
+                <button type="submit" class="upload-button">Fazer Upload</button>
+            </form>
         </section>
     </main>
     <footer>
